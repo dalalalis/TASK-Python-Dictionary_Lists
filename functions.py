@@ -46,8 +46,10 @@ print(add_summary_to_book("this is a good book about", books[0]))
 
 
 def get_book_property(property, book):
-    ...
-
+    for book in books:
+        if property in book: 
+            bookvalue=books.get["property"]
+    return bookvalue
 
 print(get_book_property("color", books[0]))
 print(get_book_property("title", books[0]))
